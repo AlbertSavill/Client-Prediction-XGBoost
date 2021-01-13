@@ -1,14 +1,14 @@
 Loan Prediction Dirty
 70/30
-light gradient boost Machine = 0.9422
+Light Gradient Boost Machine = 0.9422
 important features = duration, euribor3m, age
 80/20 
 Gradient Boost classifier = 0.9215
 important features = duration, nr.employed, euribor3m
-Light gradient boost Machine 0.9318
+Light Gradient Boost Machine = 0.9318
 important features = euribor3m, duration, age
 
-Most Accurate - Light gradient boost Machine 70/30 = 94.2%
+Most Accurate - Light Gradient Boost Machine 70/30 = 94.2%
 
 Loan Prediction Clean
 70/30
