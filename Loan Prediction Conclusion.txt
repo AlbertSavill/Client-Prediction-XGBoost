@@ -1,0 +1,32 @@
+Loan Prediction Dirty
+70/30
+light gradient boost Machine = 0.9422
+important features = duration, euribor3m, age
+80/20 
+Gradient Boost classifier = 0.9215
+important features = duration, nr.employed, euribor3m
+Light gradient boost Machine 0.9318
+important features = euribor3m, duration, age
+
+Most Accurate - Light gradient boost Machine 70/30 = 94.2%
+
+Loan Prediction Clean
+70/30
+Light Gradient Boosting Machine = 0.9366
+important features = duration, age, cons.price.idx, cons.conf.idx
+80/20
+Gradient Boost Classifier = 0.9160
+Important Features = duration, pdays, cons.conf.idx, cons.price.idx
+
+Most accurate - Light Gradient Boost Machine 70/30 = 93.6%
+
+Overall it seems the most accurate model is the Light gradient boost Macchine 70/30
+From the loan prediction that keeps all attributes and does not get rid of
+any with a final score of 94.2%.
+It seems the lowest accurate model is the Gradient Boost Classifier 80/20 from
+that actually gets rid of the attributes of 'previous', 'emp.var.rate', 'nr.employed', 'euribor3m'
+Perhaps in this dataset, the best training/test balance is 70/30, and also best to keep 
+all the attributes. The only benefit gaines from getting rid of the correlated attributes
+was to discover other attributes that may play an important role of predicting loans to
+bank customers, those newly important attributes being cons.price.idx, cons.conf.idx and
+pdays to consider.
